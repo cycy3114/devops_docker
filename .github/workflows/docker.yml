@@ -11,6 +11,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Run tests
+        run: |
+          pip install -r requirements.txt
+          pytest
+
       - name: Run a basic test
         run: echo "Test passed!"
 
@@ -32,4 +37,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: cycy3114/devops_demo:latest
+          tags: yc228/devops_demo:latest
