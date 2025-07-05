@@ -47,4 +47,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: cycy3114/devops_docker:latest
+          tags: yc228/devops_docker:latest
